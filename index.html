@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="form">
+		<h1 class="sarlavha">Movies List</h1>
+		<input id="input" type="text"  placeholder="text" autocomplete="off">
+		<select id="select2"><option value="all">Categories</option></select>
+		<select id="select3"><option value="all">Years</option></select><br class="br1">
+		<select id="select">
+			<option value="default">Sort</option>
+			<option value="az">A-Z</option>
+			<option value="za">Z-A</option>
+			<option value="hr">Hieghest rating</option>
+			<option value="lr">Lowest rating</option>
+
+		</select>
+
+		<button type="submit" id="btn">Search</button>
+	</form>
+	<div class="box">
+		<div class="movies"></div>
+		<ol class="favourite-list"></ol>
+	</div>
+	<div class="summar-box">
+		<div class="summar">
+
+		<div class="btn-box"><button class="close-btn">x</button></div>
+			<h2 class="summname">Lorem ipsum dolor sit amet</h2>
+			<div class="sumrating"><span class="sumrate"> </span><span class="star"> ★</span></div>
+			<div class="summyear">2000</div>
+			<div class="summcateg"></div>
+			<p class="summtext">dfjkg</p>
+		</div>
+	</div>
+
+
+	<template id="movie-template">
+		<div class="movie">
+			<span class="movie-id">0</span>
+			<h2 class="movie-title">Movie Name</h2>
+			<i class="movie-year">Movie Year</i><br>
+			<div class="ratebox">
+				<div class="ratebox-box">
+					<span class="rating">0</span>
+				</div>	
+			</div>
+			<a class="movie-link" href="https://www.youtube.com/watch?v=">Movie Link</a><br>
+			<button class="sumbtn">Read Summary</button>
+			<button class="addlistbtn">Add to Watchlist</button>
+			<ul class="category-list"></ul>
+		</div>
+	</template>
+	<template id="watchlist-template">
+		<li class="watchlist__item">
+			<span class="watchlist__title">Lorem ipsum dolor sit amet.</span>
+			<button class="watchlist__remove-button" type="button">X</button>
+		</li>
+	</template>
+	<template id="category"><li class="category-name"></li></template>
+
+	
+	<script src="js/movies.js"></script>
+	<script src="js/createbase.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
